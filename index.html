@@ -168,7 +168,7 @@
         <div class="header">
             <img src="assets/logo.png" alt="Stella Habits Logo" class="logo">
             <h1 id="main-title">Stella Habits</h1>
-            <p id="main-subtitle">Privacy Policy &amp; Terms of Service</p>
+            <p id="main-subtitle">Privacy Policy &amp; Terms &amp; Conditions</p>
             <div class="lang-selector">
                 <button class="lang-btn active" onclick="switchLanguage('en')">English</button>
                 <button class="lang-btn" onclick="switchLanguage('fr')">Français</button>
@@ -184,7 +184,7 @@
             <!-- English Privacy Policy -->
             <div class="lang-content en" style="display: block;">
                 <h2>Privacy Policy</h2>
-                <p><strong>Last Updated:</strong> October 2024</p>
+                <p><strong>Last Updated:</strong> March 2026</p>
 
                 <h3>Introduction</h3>
                 <p>Welcome to Stella Habits. We are committed to protecting your privacy and ensuring you have a positive experience while using our iOS application. This Privacy Policy explains how we collect, use, and safeguard your information.</p>
@@ -192,9 +192,10 @@
                 <h3>Information We Collect</h3>
                 <p>Stella Habits is designed with your privacy in mind. We collect minimal information:</p>
                 <ul>
-                    <li><strong>Usage Data:</strong> We collect anonymous usage statistics to improve the app experience</li>
-                    <li><strong>Device Information:</strong> Basic device information for app functionality and crash reporting</li>
-                    <li><strong>User-Created Content:</strong> Your habit data and personal goals are stored locally on your device</li>
+                    <li><strong>Usage Data:</strong> We collect aggregated, non-personally identifiable usage statistics through Apple Analytics to improve the app experience</li>
+                    <li><strong>Device Information:</strong> Basic device information for app functionality and crash reporting, collected through Apple Analytics</li>
+                    <li><strong>User-Created Content:</strong> Your habit data and personal goals are stored locally on your device by default</li>
+                    <li><strong>iCloud Data:</strong> If you opt in to iCloud sync, your habit data is stored in your personal iCloud account to enable cross-device synchronization. No separate account or sign-up is required</li>
                 </ul>
 
                 <h3>How We Use Your Information</h3>
@@ -202,23 +203,29 @@
                 <ul>
                     <li>Provide and maintain our service</li>
                     <li>Improve and personalize your experience</li>
-                    <li>Analyze usage patterns to enhance app features</li>
-                    <li>Communicate with you about updates and new features</li>
+                    <li>Analyze aggregated usage patterns to enhance app features</li>
                 </ul>
 
                 <h3>Data Storage and Security</h3>
-                <p>Your habit data is stored locally on your device. We implement appropriate security measures to protect your information from unauthorized access, alteration, or destruction.</p>
+                <p>Your habit data is stored locally on your device by default. If you enable iCloud sync, your data is also stored in your personal iCloud account, protected by Apple's security measures. We implement appropriate security measures to protect your information from unauthorized access, alteration, or destruction.</p>
+
+                <h3>Data Retention</h3>
+                <p>Your locally stored data persists on your device until you delete the app. If you use iCloud sync, your data remains in your iCloud account until you manually delete it. Analytics data collected through Apple Analytics is retained according to Apple's data retention policies.</p>
 
                 <h3>Third-Party Services</h3>
-                <p>We may use third-party services for analytics and crash reporting. These services are bound by their own privacy policies.</p>
+                <p>We use Apple Analytics for aggregated usage statistics and crash reporting. Apple Analytics collects data in a way that does not personally identify you. No other third-party analytics or tracking services are used. Stella Habits does not engage in cross-app tracking and does not use the App Tracking Transparency framework, as no cross-app or cross-site tracking occurs.</p>
 
                 <h3>Your Rights</h3>
                 <p>You have the right to:</p>
                 <ul>
                     <li>Access your personal data</li>
                     <li>Request deletion of your data</li>
+                    <li>Request rectification of inaccurate data</li>
+                    <li>Request portability of your data</li>
                     <li>Opt-out of data collection where applicable</li>
+                    <li>Lodge a complaint with a supervisory authority (for users covered by GDPR)</li>
                 </ul>
+                <p>We do not sell your personal data. Users covered by the California Consumer Privacy Act (CCPA) have the right to know that no personal information is sold or shared with third parties for advertising purposes.</p>
 
                 <h3>Children's Privacy</h3>
                 <p>Our app is not intended for children under 13. We do not knowingly collect personal information from children.</p>
@@ -233,51 +240,58 @@
 
             <!-- French Privacy Policy -->
             <div class="lang-content fr" style="display: none;">
-                <h2>Politique de Confidentialité</h2>
-                <p><strong>Dernière mise à jour :</strong> Octobre 2024</p>
+                <h2>Politique de Confidentialit&eacute;</h2>
+                <p><strong>Derni&egrave;re mise &agrave; jour :</strong> Mars 2026</p>
 
                 <h3>Introduction</h3>
-                <p>Bienvenue sur Stella Habits. Nous nous engageons à protéger votre vie privée et à vous assurer une expérience positive lors de l'utilisation de notre application iOS. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos informations.</p>
+                <p>Bienvenue sur Stella Habits. Nous nous engageons &agrave; prot&eacute;ger votre vie priv&eacute;e et &agrave; vous assurer une exp&eacute;rience positive lors de l'utilisation de notre application iOS. Cette Politique de Confidentialit&eacute; explique comment nous collectons, utilisons et prot&eacute;geons vos informations.</p>
 
                 <h3>Informations que Nous Collectons</h3>
-                <p>Stella Habits est conçu en pensant à votre vie privée. Nous collectons un minimum d'informations :</p>
+                <p>Stella Habits est con&ccedil;u en pensant &agrave; votre vie priv&eacute;e. Nous collectons un minimum d'informations :</p>
                 <ul>
-                    <li><strong>Données d'Utilisation :</strong> Nous collectons des statistiques d'utilisation anonymes pour améliorer l'expérience de l'application</li>
-                    <li><strong>Informations sur l'Appareil :</strong> Informations de base sur l'appareil pour la fonctionnalité de l'application et le signalement de plantages</li>
-                    <li><strong>Contenu Créé par l'Utilisateur :</strong> Vos données d'habitudes et objectifs personnels sont stockés localement sur votre appareil</li>
+                    <li><strong>Donn&eacute;es d'Utilisation :</strong> Nous collectons des statistiques d'utilisation agr&eacute;g&eacute;es et non personnellement identifiables via Apple Analytics pour am&eacute;liorer l'exp&eacute;rience de l'application</li>
+                    <li><strong>Informations sur l'Appareil :</strong> Informations de base sur l'appareil pour la fonctionnalit&eacute; de l'application et le signalement de plantages, collect&eacute;es via Apple Analytics</li>
+                    <li><strong>Contenu Cr&eacute;&eacute; par l'Utilisateur :</strong> Vos donn&eacute;es d'habitudes et objectifs personnels sont stock&eacute;s localement sur votre appareil par d&eacute;faut</li>
+                    <li><strong>Donn&eacute;es iCloud :</strong> Si vous activez la synchronisation iCloud, vos donn&eacute;es d'habitudes sont stock&eacute;es dans votre compte iCloud personnel pour permettre la synchronisation entre appareils. Aucun compte s&eacute;par&eacute; ni inscription n'est requis</li>
                 </ul>
 
                 <h3>Comment Nous Utilisons Vos Informations</h3>
-                <p>Les informations que nous collectons sont utilisées pour :</p>
+                <p>Les informations que nous collectons sont utilis&eacute;es pour :</p>
                 <ul>
                     <li>Fournir et maintenir notre service</li>
-                    <li>Améliorer et personnaliser votre expérience</li>
-                    <li>Analyser les modèles d'utilisation pour améliorer les fonctionnalités de l'application</li>
-                    <li>Communiquer avec vous sur les mises à jour et nouvelles fonctionnalités</li>
+                    <li>Am&eacute;liorer et personnaliser votre exp&eacute;rience</li>
+                    <li>Analyser les mod&egrave;les d'utilisation agr&eacute;g&eacute;s pour am&eacute;liorer les fonctionnalit&eacute;s de l'application</li>
                 </ul>
 
-                <h3>Stockage et Sécurité des Données</h3>
-                <p>Vos données d'habitudes sont stockées localement sur votre appareil. Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations contre tout accès non autorisé, modification ou destruction.</p>
+                <h3>Stockage et S&eacute;curit&eacute; des Donn&eacute;es</h3>
+                <p>Vos donn&eacute;es d'habitudes sont stock&eacute;es localement sur votre appareil par d&eacute;faut. Si vous activez la synchronisation iCloud, vos donn&eacute;es sont &eacute;galement stock&eacute;es dans votre compte iCloud personnel, prot&eacute;g&eacute;es par les mesures de s&eacute;curit&eacute; d'Apple. Nous mettons en &oelig;uvre des mesures de s&eacute;curit&eacute; appropri&eacute;es pour prot&eacute;ger vos informations contre tout acc&egrave;s non autoris&eacute;, modification ou destruction.</p>
+
+                <h3>Conservation des Donn&eacute;es</h3>
+                <p>Vos donn&eacute;es stock&eacute;es localement persistent sur votre appareil jusqu'&agrave; ce que vous supprimiez l'application. Si vous utilisez la synchronisation iCloud, vos donn&eacute;es restent dans votre compte iCloud jusqu'&agrave; ce que vous les supprimiez manuellement. Les donn&eacute;es analytiques collect&eacute;es via Apple Analytics sont conserv&eacute;es conform&eacute;ment aux politiques de conservation des donn&eacute;es d'Apple.</p>
 
                 <h3>Services Tiers</h3>
-                <p>Nous pouvons utiliser des services tiers pour l'analyse et le signalement de plantages. Ces services sont liés par leurs propres politiques de confidentialité.</p>
+                <p>Nous utilisons Apple Analytics pour les statistiques d'utilisation agr&eacute;g&eacute;es et le signalement de plantages. Apple Analytics collecte les donn&eacute;es de mani&egrave;re &agrave; ne pas vous identifier personnellement. Aucun autre service d'analyse ou de suivi tiers n'est utilis&eacute;. Stella Habits ne pratique pas le suivi inter-applications et n'utilise pas le cadre App Tracking Transparency, car aucun suivi inter-applications ou inter-sites n'a lieu.</p>
 
                 <h3>Vos Droits</h3>
                 <p>Vous avez le droit de :</p>
                 <ul>
-                    <li>Accéder à vos données personnelles</li>
-                    <li>Demander la suppression de vos données</li>
-                    <li>Refuser la collecte de données le cas échéant</li>
+                    <li>Acc&eacute;der &agrave; vos donn&eacute;es personnelles</li>
+                    <li>Demander la suppression de vos donn&eacute;es</li>
+                    <li>Demander la rectification de donn&eacute;es inexactes</li>
+                    <li>Demander la portabilit&eacute; de vos donn&eacute;es</li>
+                    <li>Refuser la collecte de donn&eacute;es le cas &eacute;ch&eacute;ant</li>
+                    <li>D&eacute;poser une plainte aupr&egrave;s d'une autorit&eacute; de contr&ocirc;le (pour les utilisateurs couverts par le RGPD)</li>
                 </ul>
+                <p>Nous ne vendons pas vos donn&eacute;es personnelles. Les utilisateurs couverts par le California Consumer Privacy Act (CCPA) ont le droit de savoir qu'aucune information personnelle n'est vendue ou partag&eacute;e avec des tiers &agrave; des fins publicitaires.</p>
 
-                <h3>Confidentialité des Enfants</h3>
-                <p>Notre application n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès des enfants.</p>
+                <h3>Confidentialit&eacute; des Enfants</h3>
+                <p>Notre application n'est pas destin&eacute;e aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles aupr&egrave;s des enfants.</p>
 
                 <h3>Modifications de Cette Politique</h3>
-                <p>Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique sur cette page.</p>
+                <p>Nous pouvons mettre &agrave; jour cette Politique de Confidentialit&eacute; de temps &agrave; autre. Nous vous informerons de tout changement en publiant la nouvelle politique sur cette page.</p>
 
                 <div class="contact">
-                    <p><strong>Nous Contacter :</strong> Nous serions ravis de vous entendre ! Pour le support, les questions, les commentaires, les suggestions ou toute demande concernant cette Politique de Confidentialité, n'hésitez pas à nous contacter à <strong>stellahabits@gmail.com</strong></p>
+                    <p><strong>Nous Contacter :</strong> Nous serions ravis de vous entendre ! Pour le support, les questions, les commentaires, les suggestions ou toute demande concernant cette Politique de Confidentialit&eacute;, n'h&eacute;sitez pas &agrave; nous contacter &agrave; <strong>stellahabits@gmail.com</strong></p>
                 </div>
             </div>
         </div>
@@ -286,10 +300,13 @@
             <!-- English Terms -->
             <div class="lang-content en" style="display: block;">
                 <h2>Terms &amp; Conditions</h2>
-                <p><strong>Last Updated:</strong> October 2024</p>
+                <p><strong>Last Updated:</strong> March 2026</p>
 
                 <h3>Agreement to Terms</h3>
                 <p>By accessing and using Stella Habits, you agree to be bound by these Terms &amp; Conditions. If you disagree with any part of these terms, you may not use our application.</p>
+
+                <h3>Minimum Age</h3>
+                <p>You must be at least 13 years of age to use Stella Habits. By using the app, you confirm that you meet this age requirement.</p>
 
                 <h3>Use License</h3>
                 <p>We grant you a personal, non-transferable, non-exclusive license to use the Stella Habits application for your personal use, subject to these terms.</p>
@@ -297,8 +314,8 @@
                 <h3>User Responsibilities</h3>
                 <p>You are responsible for:</p>
                 <ul>
-                    <li>Maintaining the confidentiality of your account information</li>
-                    <li>All activities that occur under your account</li>
+                    <li>Maintaining the security of your device and your data within the app</li>
+                    <li>All activities associated with your use of the app</li>
                     <li>Ensuring your use of the app complies with applicable laws</li>
                 </ul>
 
@@ -324,10 +341,13 @@
                 <p>We reserve the right to modify these terms at any time. We will notify users of any material changes.</p>
 
                 <h3>Termination</h3>
-                <p>We may terminate or suspend your access to the app immediately, without prior notice, for any reason, including breach of these Terms.</p>
+                <p>We may terminate or suspend your access to the app immediately, without prior notice, for any reason, including breach of these Terms. Upon termination, your locally stored data remains on your device and is not affected.</p>
+
+                <h3>Dispute Resolution</h3>
+                <p>In the event of a dispute arising from these Terms or your use of the app, you agree to first attempt to resolve the dispute informally by contacting us at stellahabits@gmail.com. If the dispute cannot be resolved informally, it shall be submitted to the courts of the Province of Quebec, Canada.</p>
 
                 <h3>Governing Law</h3>
-                <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions.</p>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the Province of Quebec, Canada, without regard to conflict of law provisions.</p>
 
                 <div class="contact">
                     <p><strong>Contact Us:</strong> We'd love to hear from you! For support, questions, comments, suggestions, or any inquiries about these Terms &amp; Conditions, please reach out to us at <strong>stellahabits@gmail.com</strong></p>
@@ -337,51 +357,57 @@
             <!-- French Terms -->
             <div class="lang-content fr" style="display: none;">
                 <h2>Conditions d'Utilisation</h2>
-                <p><strong>Dernière mise à jour :</strong> Octobre 2024</p>
+                <p><strong>Derni&egrave;re mise &agrave; jour :</strong> Mars 2026</p>
 
                 <h3>Accord aux Conditions</h3>
-                <p>En accédant et en utilisant Stella Habits, vous acceptez d'être lié par ces Conditions d'Utilisation. Si vous n'êtes pas d'accord avec une partie de ces conditions, vous ne pouvez pas utiliser notre application.</p>
+                <p>En acc&eacute;dant et en utilisant Stella Habits, vous acceptez d'&ecirc;tre li&eacute; par ces Conditions d'Utilisation. Si vous n'&ecirc;tes pas d'accord avec une partie de ces conditions, vous ne pouvez pas utiliser notre application.</p>
+
+                <h3>&Acirc;ge Minimum</h3>
+                <p>Vous devez avoir au moins 13 ans pour utiliser Stella Habits. En utilisant l'application, vous confirmez que vous remplissez cette condition d'&acirc;ge.</p>
 
                 <h3>Licence d'Utilisation</h3>
-                <p>Nous vous accordons une licence personnelle, non transférable et non exclusive pour utiliser l'application Stella Habits pour votre usage personnel, sous réserve de ces conditions.</p>
+                <p>Nous vous accordons une licence personnelle, non transf&eacute;rable et non exclusive pour utiliser l'application Stella Habits pour votre usage personnel, sous r&eacute;serve de ces conditions.</p>
 
-                <h3>Responsabilités de l'Utilisateur</h3>
-                <p>Vous êtes responsable de :</p>
+                <h3>Responsabilit&eacute;s de l'Utilisateur</h3>
+                <p>Vous &ecirc;tes responsable de :</p>
                 <ul>
-                    <li>Maintenir la confidentialité des informations de votre compte</li>
-                    <li>Toutes les activités qui se produisent sous votre compte</li>
+                    <li>Maintenir la s&eacute;curit&eacute; de votre appareil et de vos donn&eacute;es dans l'application</li>
+                    <li>Toutes les activit&eacute;s associ&eacute;es &agrave; votre utilisation de l'application</li>
                     <li>Assurer que votre utilisation de l'application est conforme aux lois applicables</li>
                 </ul>
 
-                <h3>Activités Interdites</h3>
+                <h3>Activit&eacute;s Interdites</h3>
                 <p>Vous ne pouvez pas :</p>
                 <ul>
                     <li>Modifier, adapter ou pirater l'application</li>
-                    <li>Utiliser l'application à des fins illégales ou non autorisées</li>
-                    <li>Tenter d'obtenir un accès non autorisé à nos systèmes</li>
-                    <li>Interférer ou perturber la fonctionnalité de l'application</li>
+                    <li>Utiliser l'application &agrave; des fins ill&eacute;gales ou non autoris&eacute;es</li>
+                    <li>Tenter d'obtenir un acc&egrave;s non autoris&eacute; &agrave; nos syst&egrave;mes</li>
+                    <li>Interf&eacute;rer ou perturber la fonctionnalit&eacute; de l'application</li>
                 </ul>
 
-                <h3>Propriété Intellectuelle</h3>
-                <p>L'application Stella Habits, y compris son contenu original, ses fonctionnalités et sa fonctionnalité, nous appartient et est protégée par les lois internationales sur le droit d'auteur, les marques de commerce et autres lois sur la propriété intellectuelle.</p>
+                <h3>Propri&eacute;t&eacute; Intellectuelle</h3>
+                <p>L'application Stella Habits, y compris son contenu original, ses fonctionnalit&eacute;s et sa fonctionnalit&eacute;, nous appartient et est prot&eacute;g&eacute;e par les lois internationales sur le droit d'auteur, les marques de commerce et autres lois sur la propri&eacute;t&eacute; intellectuelle.</p>
 
                 <h3>Exclusion de Garanties</h3>
                 <p>L'application est fournie "telle quelle" sans garanties d'aucune sorte, expresses ou implicites. Nous ne garantissons pas que l'application sera sans erreur ou ininterrompue.</p>
 
-                <h3>Limitation de Responsabilité</h3>
-                <p>Nous ne serons pas responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs résultant de votre utilisation de l'application.</p>
+                <h3>Limitation de Responsabilit&eacute;</h3>
+                <p>Nous ne serons pas responsables des dommages indirects, accessoires, sp&eacute;ciaux, cons&eacute;cutifs ou punitifs r&eacute;sultant de votre utilisation de l'application.</p>
 
                 <h3>Modifications des Conditions</h3>
-                <p>Nous nous réservons le droit de modifier ces conditions à tout moment. Nous informerons les utilisateurs de tout changement important.</p>
+                <p>Nous nous r&eacute;servons le droit de modifier ces conditions &agrave; tout moment. Nous informerons les utilisateurs de tout changement important.</p>
 
-                <h3>Résiliation</h3>
-                <p>Nous pouvons résilier ou suspendre votre accès à l'application immédiatement, sans préavis, pour quelque raison que ce soit, y compris la violation de ces Conditions.</p>
+                <h3>R&eacute;siliation</h3>
+                <p>Nous pouvons r&eacute;silier ou suspendre votre acc&egrave;s &agrave; l'application imm&eacute;diatement, sans pr&eacute;avis, pour quelque raison que ce soit, y compris la violation de ces Conditions. En cas de r&eacute;siliation, vos donn&eacute;es stock&eacute;es localement restent sur votre appareil et ne sont pas affect&eacute;es.</p>
+
+                <h3>R&eacute;solution des Litiges</h3>
+                <p>En cas de litige d&eacute;coulant de ces Conditions ou de votre utilisation de l'application, vous acceptez de tenter d'abord de r&eacute;soudre le litige de mani&egrave;re informelle en nous contactant &agrave; stellahabits@gmail.com. Si le litige ne peut &ecirc;tre r&eacute;solu de mani&egrave;re informelle, il sera soumis aux tribunaux de la province de Qu&eacute;bec, Canada.</p>
 
                 <h3>Loi Applicable</h3>
-                <p>Ces Conditions seront régies et interprétées conformément aux lois applicables, sans égard aux dispositions relatives aux conflits de lois.</p>
+                <p>Ces Conditions seront r&eacute;gies et interpr&eacute;t&eacute;es conform&eacute;ment aux lois de la province de Qu&eacute;bec, Canada, sans &eacute;gard aux dispositions relatives aux conflits de lois.</p>
 
                 <div class="contact">
-                    <p><strong>Nous Contacter :</strong> Nous serions ravis de vous entendre ! Pour le support, les questions, les commentaires, les suggestions ou toute demande concernant ces Conditions d'Utilisation, n'hésitez pas à nous contacter à <strong>stellahabits@gmail.com</strong></p>
+                    <p><strong>Nous Contacter :</strong> Nous serions ravis de vous entendre ! Pour le support, les questions, les commentaires, les suggestions ou toute demande concernant ces Conditions d'Utilisation, n'h&eacute;sitez pas &agrave; nous contacter &agrave; <strong>stellahabits@gmail.com</strong></p>
                 </div>
             </div>
         </div>
@@ -423,7 +449,7 @@
                 document.getElementById('privacy-tab').textContent = 'Privacy Policy';
                 document.getElementById('terms-tab').textContent = 'Terms & Conditions';
                 document.getElementById('main-title').textContent = 'Stella Habits';
-                document.getElementById('main-subtitle').textContent = 'Privacy Policy & Terms of Service';
+                document.getElementById('main-subtitle').textContent = 'Privacy Policy & Terms & Conditions';
             }
 
             if (updateUrl) updateUrlParams();
