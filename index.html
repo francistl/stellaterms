@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stella Habits - Privacy &amp; Terms</title>
+    <meta name="description" content="Privacy Policy and Terms &amp; Conditions for Stella Habits, a habit-tracking app for iOS.">
+    <meta property="og:title" content="Stella Habits - Privacy &amp; Terms">
+    <meta property="og:description" content="Privacy Policy and Terms &amp; Conditions for Stella Habits">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #ff6b9d 0%, #ffa751 25%, #ffd93d 50%, #6bcf7f 75%, #4ecdc4 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ffb3cc 0%, #ffc999 25%, #ffe999 50%, #a8e6b3 75%, #9ce6e0 100%);
+            color: #1a1a1a;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .lang-selector {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.4);
+            border: 2px solid rgba(0, 0, 0, 0.15);
+            color: #1a1a1a;
+            padding: 8px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .lang-btn.active {
+            background: white;
+            color: #ff6b9d;
+        }
+
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #e5e7eb;
+            background: #f9fafb;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: #6b7280;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab:hover {
+            background: #f3f4f6;
+        }
+
+        .tab.active {
+            color: #ff6b9d;
+            border-bottom-color: #ff6b9d;
+            background: white;
+        }
+
+        .content {
+            padding: 40px;
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .content h2 {
+            color: #ff6b9d;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .content h3 {
+            color: #374151;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .content p, .content li {
+            color: #4b5563;
+            margin-bottom: 15px;
+        }
+
+        .content ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .contact strong {
+            color: #ff6b9d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/logo.png" alt="Stella Habits Logo" class="logo">
+            <h1 id="main-title">Stella Habits</h1>
+            <p id="main-subtitle">Privacy Policy &amp; Terms of Service</p>
+            <div class="lang-selector">
+                <button class="lang-btn active" onclick="switchLanguage('en')">English</button>
+                <button class="lang-btn" onclick="switchLanguage('fr')">Français</button>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" onclick="switchTab('privacy')" id="privacy-tab">Privacy Policy</div>
+            <div class="tab" onclick="switchTab('terms')" id="terms-tab">Terms &amp; Conditions</div>
+        </div>
+
+        <div id="privacy-content" class="content active">
+            <!-- English Privacy Policy -->
+            <div class="lang-content en" style="display: block;">
+                <h2>Privacy Policy</h2>
+                <p><strong>Last Updated:</strong> October 2024</p>
+
+                <h3>Introduction</h3>
+                <p>Welcome to Stella Habits. We are committed to protecting your privacy and ensuring you have a positive experience while using our iOS application. This Privacy Policy explains how we collect, use, and safeguard your information.</p>
+
+                <h3>Information We Collect</h3>
+                <p>Stella Habits is designed with your privacy in mind. We collect minimal information:</p>
+                <ul>
+                    <li><strong>Usage Data:</strong> We collect anonymous usage statistics to improve the app experience</li>
+                    <li><strong>Device Information:</strong> Basic device information for app functionality and crash reporting</li>
+                    <li><strong>User-Created Content:</strong> Your habit data and personal goals are stored locally on your device</li>
+                </ul>
+
+                <h3>How We Use Your Information</h3>
+                <p>The information we collect is used to:</p>
+                <ul>
+                    <li>Provide and maintain our service</li>
+                    <li>Improve and personalize your experience</li>
+                    <li>Analyze usage patterns to enhance app features</li>
+                    <li>Communicate with you about updates and new features</li>
+                </ul>
+
+                <h3>Data Storage and Security</h3>
+                <p>Your habit data is stored locally on your device. We implement appropriate security measures to protect your information from unauthorized access, alteration, or destruction.</p>
+
+                <h3>Third-Party Services</h3>
+                <p>We may use third-party services for analytics and crash reporting. These services are bound by their own privacy policies.</p>
+
+                <h3>Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal data</li>
+                    <li>Request deletion of your data</li>
+                    <li>Opt-out of data collection where applicable</li>
+                </ul>
+
+                <h3>Children's Privacy</h3>
+                <p>Our app is not intended for children under 13. We do not knowingly collect personal information from children.</p>
+
+                <h3>Changes to This Policy</h3>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
+
+                <div class="contact">
+                    <p><strong>Contact Us:</strong> We'd love to hear from you! For support, questions, comments, suggestions, or any inquiries about this Privacy Policy, please reach out to us at <strong>stellahabits@gmail.com</strong></p>
+                </div>
+            </div>
+
+            <!-- French Privacy Policy -->
+            <div class="lang-content fr" style="display: none;">
+                <h2>Politique de Confidentialité</h2>
+                <p><strong>Dernière mise à jour :</strong> Octobre 2024</p>
+
+                <h3>Introduction</h3>
+                <p>Bienvenue sur Stella Habits. Nous nous engageons à protéger votre vie privée et à vous assurer une expérience positive lors de l'utilisation de notre application iOS. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos informations.</p>
+
+                <h3>Informations que Nous Collectons</h3>
+                <p>Stella Habits est conçu en pensant à votre vie privée. Nous collectons un minimum d'informations :</p>
+                <ul>
+                    <li><strong>Données d'Utilisation :</strong> Nous collectons des statistiques d'utilisation anonymes pour améliorer l'expérience de l'application</li>
+                    <li><strong>Informations sur l'Appareil :</strong> Informations de base sur l'appareil pour la fonctionnalité de l'application et le signalement de plantages</li>
+                    <li><strong>Contenu Créé par l'Utilisateur :</strong> Vos données d'habitudes et objectifs personnels sont stockés localement sur votre appareil</li>
+                </ul>
+
+                <h3>Comment Nous Utilisons Vos Informations</h3>
+                <p>Les informations que nous collectons sont utilisées pour :</p>
+                <ul>
+                    <li>Fournir et maintenir notre service</li>
+                    <li>Améliorer et personnaliser votre expérience</li>
+                    <li>Analyser les modèles d'utilisation pour améliorer les fonctionnalités de l'application</li>
+                    <li>Communiquer avec vous sur les mises à jour et nouvelles fonctionnalités</li>
+                </ul>
+
+                <h3>Stockage et Sécurité des Données</h3>
+                <p>Vos données d'habitudes sont stockées localement sur votre appareil. Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations contre tout accès non autorisé, modification ou destruction.</p>
+
+                <h3>Services Tiers</h3>
+                <p>Nous pouvons utiliser des services tiers pour l'analyse et le signalement de plantages. Ces services sont liés par leurs propres politiques de confidentialité.</p>
+
+                <h3>Vos Droits</h3>
+                <p>Vous avez le droit de :</p>
+                <ul>
+                    <li>Accéder à vos données personnelles</li>
+                    <li>Demander la suppression de vos données</li>
+                    <li>Refuser la collecte de données le cas échéant</li>
+                </ul>
+
+                <h3>Confidentialité des Enfants</h3>
+                <p>Notre application n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès des enfants.</p>
+
+                <h3>Modifications de Cette Politique</h3>
+                <p>Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique sur cette page.</p>
+
+                <div class="contact">
+                    <p><strong>Nous Contacter :</strong> Nous serions ravis de vous entendre ! Pour le support, les questions, les commentaires, les suggestions ou toute demande concernant cette Politique de Confidentialité, n'hésitez pas à nous contacter à <strong>stellahabits@gmail.com</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="terms-content" class="content">
+            <!-- English Terms -->
+            <div class="lang-content en" style="display: block;">
+                <h2>Terms &amp; Conditions</h2>
+                <p><strong>Last Updated:</strong> October 2024</p>
+
+                <h3>Agreement to Terms</h3>
+                <p>By accessing and using Stella Habits, you agree to be bound by these Terms &amp; Conditions. If you disagree with any part of these terms, you may not use our application.</p>
+
+                <h3>Use License</h3>
+                <p>We grant you a personal, non-transferable, non-exclusive license to use the Stella Habits application for your personal use, subject to these terms.</p>
+
+                <h3>User Responsibilities</h3>
+                <p>You are responsible for:</p>
+                <ul>
+                    <li>Maintaining the confidentiality of your account information</li>
+                    <li>All activities that occur under your account</li>
+                    <li>Ensuring your use of the app complies with applicable laws</li>
+                </ul>
+
+                <h3>Prohibited Activities</h3>
+                <p>You may not:</p>
+                <ul>
+                    <li>Modify, adapt, or hack the application</li>
+                    <li>Use the app for any illegal or unauthorized purpose</li>
+                    <li>Attempt to gain unauthorized access to our systems</li>
+                    <li>Interfere with or disrupt the app's functionality</li>
+                </ul>
+
+                <h3>Intellectual Property</h3>
+                <p>The Stella Habits application, including its original content, features, and functionality, is owned by us and is protected by international copyright, trademark, and other intellectual property laws.</p>
+
+                <h3>Disclaimer of Warranties</h3>
+                <p>The app is provided "as is" without warranties of any kind, either express or implied. We do not guarantee that the app will be error-free or uninterrupted.</p>
+
+                <h3>Limitation of Liability</h3>
+                <p>We shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of the application.</p>
+
+                <h3>Changes to Terms</h3>
+                <p>We reserve the right to modify these terms at any time. We will notify users of any material changes.</p>
+
+                <h3>Termination</h3>
+                <p>We may terminate or suspend your access to the app immediately, without prior notice, for any reason, including breach of these Terms.</p>
+
+                <h3>Governing Law</h3>
+                <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions.</p>
+
+                <div class="contact">
+                    <p><strong>Contact Us:</strong> We'd love to hear from you! For support, questions, comments, suggestions, or any inquiries about these Terms &amp; Conditions, please reach out to us at <strong>stellahabits@gmail.com</strong></p>
+                </div>
+            </div>
+
+            <!-- French Terms -->
+            <div class="lang-content fr" style="display: none;">
+                <h2>Conditions d'Utilisation</h2>
+                <p><strong>Dernière mise à jour :</strong> Octobre 2024</p>
+
+                <h3>Accord aux Conditions</h3>
+                <p>En accédant et en utilisant Stella Habits, vous acceptez d'être lié par ces Conditions d'Utilisation. Si vous n'êtes pas d'accord avec une partie de ces conditions, vous ne pouvez pas utiliser notre application.</p>
+
+                <h3>Licence d'Utilisation</h3>
+                <p>Nous vous accordons une licence personnelle, non transférable et non exclusive pour utiliser l'application Stella Habits pour votre usage personnel, sous réserve de ces conditions.</p>
+
+                <h3>Responsabilités de l'Utilisateur</h3>
+                <p>Vous êtes responsable de :</p>
+                <ul>
+                    <li>Maintenir la confidentialité des informations de votre compte</li>
+                    <li>Toutes les activités qui se produisent sous votre compte</li>
+                    <li>Assurer que votre utilisation de l'application est conforme aux lois applicables</li>
+                </ul>
+
+                <h3>Activités Interdites</h3>
+                <p>Vous ne pouvez pas :</p>
+                <ul>
+                    <li>Modifier, adapter ou pirater l'application</li>
+                    <li>Utiliser l'application à des fins illégales ou non autorisées</li>
+                    <li>Tenter d'obtenir un accès non autorisé à nos systèmes</li>
+                    <li>Interférer ou perturber la fonctionnalité de l'application</li>
+                </ul>
+
+                <h3>Propriété Intellectuelle</h3>
+                <p>L'application Stella Habits, y compris son contenu original, ses fonctionnalités et sa fonctionnalité, nous appartient et est protégée par les lois internationales sur le droit d'auteur, les marques de commerce et autres lois sur la propriété intellectuelle.</p>
+
+                <h3>Exclusion de Garanties</h3>
+                <p>L'application est fournie "telle quelle" sans garanties d'aucune sorte, expresses ou implicites. Nous ne garantissons pas que l'application sera sans erreur ou ininterrompue.</p>
+
+                <h3>Limitation de Responsabilité</h3>
+                <p>Nous ne serons pas responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs résultant de votre utilisation de l'application.</p>
+
+                <h3>Modifications des Conditions</h3>
+                <p>Nous nous réservons le droit de modifier ces conditions à tout moment. Nous informerons les utilisateurs de tout changement important.</p>
+
+                <h3>Résiliation</h3>
+                <p>Nous pouvons résilier ou suspendre votre accès à l'application immédiatement, sans préavis, pour quelque raison que ce soit, y compris la violation de ces Conditions.</p>
+
+                <h3>Loi Applicable</h3>
+                <p>Ces Conditions seront régies et interprétées conformément aux lois applicables, sans égard aux dispositions relatives aux conflits de lois.</p>
+
+                <div class="contact">
+                    <p><strong>Nous Contacter :</strong> Nous serions ravis de vous entendre ! Pour le support, les questions, les commentaires, les suggestions ou toute demande concernant ces Conditions d'Utilisation, n'hésitez pas à nous contacter à <strong>stellahabits@gmail.com</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentLang = 'en';
+        let currentTab = 'privacy';
+
+        function init() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const langParam = urlParams.get('lang');
+            const tabParam = urlParams.get('tab');
+            const savedLang = localStorage.getItem('stella-lang');
+
+            currentLang = langParam || savedLang || 'en';
+            currentTab = tabParam || 'privacy';
+
+            switchLanguage(currentLang, false);
+            switchTab(currentTab, false);
+        }
+
+        function switchLanguage(lang, updateUrl = true) {
+            currentLang = lang;
+
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.style.display = content.classList.contains(lang) ? 'block' : 'none';
+            });
+
+            if (lang === 'fr') {
+                document.getElementById('privacy-tab').textContent = 'Politique de Confidentialité';
+                document.getElementById('terms-tab').textContent = "Conditions d'Utilisation";
+                document.getElementById('main-title').textContent = 'Stella Habits';
+                document.getElementById('main-subtitle').textContent = "Politique de Confidentialité et Conditions d'Utilisation";
+            } else {
+                document.getElementById('privacy-tab').textContent = 'Privacy Policy';
+                document.getElementById('terms-tab').textContent = 'Terms & Conditions';
+                document.getElementById('main-title').textContent = 'Stella Habits';
+                document.getElementById('main-subtitle').textContent = 'Privacy Policy & Terms of Service';
+            }
+
+            if (updateUrl) updateUrlParams();
+            localStorage.setItem('stella-lang', lang);
+        }
+
+        function switchTab(tab, updateUrl = true) {
+            currentTab = tab;
+
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(`${tab}-tab`).classList.add('active');
+
+            document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+            document.getElementById(`${tab}-content`).classList.add('active');
+
+            if (updateUrl) updateUrlParams();
+        }
+
+        function updateUrlParams() {
+            const params = new URLSearchParams();
+            if (currentTab !== 'privacy') params.set('tab', currentTab);
+            if (currentLang !== 'en') params.set('lang', currentLang);
+            const newUrl = params.toString() ? '/?' + params.toString() : '/';
+            window.history.pushState({}, '', newUrl);
+        }
+
+        init();
+    </script>
+</body>
+</html>
